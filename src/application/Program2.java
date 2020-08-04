@@ -27,6 +27,10 @@ public class Program2 {
 		departmentDao.insert(newdepartment);
 		System.out.println("insertion test completed");
 
+		System.out.println("==========TEST 4==================update=====");
+		newdepartment = new Department("Production", 3);
+		departmentDao.update(newdepartment);
+		System.out.println("Update success");
 		sc.close();
 
 	}
