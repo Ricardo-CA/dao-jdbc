@@ -73,7 +73,7 @@ public class DepartmentDaoJDBC implements DepartmentDao{
 		
 		try {
 			st = conn.prepareStatement(
-					"select * from department oder by Name");
+					"select * from department order by Name");
 			
 			rs = st.executeQuery();
 			List<Department> list = new ArrayList<>();
